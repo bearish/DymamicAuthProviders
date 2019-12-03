@@ -38,11 +38,11 @@ namespace Aguacongas.AspNetCore.Authentication.Redis
         /// <summary>
         /// The store key
         /// </summary>
-        public const string StoreKey = "schemes";
+        public const string StoreKey = "{schemes}";
         /// <summary>
         /// The concurency key
         /// </summary>
-        public const string ConcurencyKey = "schemes-concurency";
+        public const string ConcurencyKey = "{schemes}-concurency";
 
         private readonly IDatabase _db;
         private readonly ISchemeDefinitionSerializer<TSchemeDefinition> _authenticationSchemeOptionsSerializer;
